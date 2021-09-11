@@ -1,0 +1,169 @@
+@font-face {
+    font-family: "Josefin";
+    src: url("../Fonts/JosefinSlab-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Josefin-Bold";
+    src: url("../Fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "PTSans";
+    src: url("../Fonts/PTSans-Regular.ttf");
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #eaedf7;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    /* for IE 9 */
+    -webkit-transform: translate(-50%, -50%);
+    /* for Safari */
+    /* optional size in px or %: */
+    width: 92%;
+    height: 80%;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 6px;
+}
+
+/* .logo {
+    
+} */
+
+.side1 img{
+    position: absolute;
+    left: 3%;
+    top: 16%;
+    height: 450px;
+    /* background-color: rgba(255, 255, 255, .5); */
+}
+.side1 h1{
+    position: absolute;
+    top: 2%;
+    left: 3%;
+    font-family: "Josefin";
+    color: #3563E4;
+}
+
+.side2{
+    height: 100%;
+    background-color: white;
+    width: 33%;
+    margin: 0;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+/* h1, h2, label, button{
+    margin-left: 15%;
+} */
+
+/* h1, h2{
+    font-family: "Josefin";
+    line-height: 12px;
+} */
+
+/* h2{
+    font-size: 18px;
+} */
+
+.side2 h1{
+    color: #3563E4;
+    font-family: "Josefin";
+    margin-top: 60px;
+    margin-left: 15%;
+}
+
+.side2 h2{
+    /* color: #5b5353; */
+    color: black;
+    font-family: "Josefin";
+    margin-left: 15%;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.side2 label{
+    /* color: #4d5555; */
+    color: #000000;
+    font-family: "PTSans";
+    margin-left: 15%;
+    font-size: 14px;
+    font-weight: 500;
+}
+.side2 input[type=email], input[type=password]{
+    height: 30px;
+    width: 259px;
+    margin-left: 15%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border:1px solid #c4bebe;
+    border-radius: 3px;
+}
+
+.side2 input[type=checkbox]{
+    margin-left: 18%;
+}
+#remember{
+    /* color: #4d5555; */
+    color: #3563E4;
+    /* margin: 20px; */
+    font-family: "PTSans";
+    font-size: 12px;
+    text-align: center;
+    /* margin-top: -10px; */
+    margin-right: 45px;
+    margin-left: 2px;
+    text-align: center;
+}
+
+#forgot{
+    /* color: #4d5555; */
+    color: #3563E4;
+    font-family: "PTSans";
+    font-size: 12px;
+    text-align: center;
+
+}
+
+button{
+    margin-top: 20px;
+    color: white;
+    font-family: "PTSans";
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    width: 268px;
+    margin-left: 15%;
+    height: 33px;
+    background-color: #3563E4;
+    margin-bottom: 20px;
+}
+
+#sign{
+    color: black;
+    /* font-weight: 800; */
+    font-family: "Josefin-Bold";
+    /* font-weight: 500; */
+    font-size: 13px;
+    margin-left: 25%;
+    text-align: center;
+
+}
+
+#sign a{
+    text-decoration: none;
+    color: #3563E4;
+    margin-left: 5px;
+}

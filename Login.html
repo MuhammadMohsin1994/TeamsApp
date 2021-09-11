@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In - Teams</title>
+    <link rel="stylesheet" href="./Login/style.css">
+</head>
+
+<body>
+
+    <div class="mainContainer">
+        <div class="side1">
+            <h1>Teams.</h1>
+            <img src="./Login/Assets/2.png" alt="">
+        </div>
+        <div class="side2">
+            <h1>Hello!</h1>
+            <h2>Login now to get all updates</h2>
+
+            <label for="">Email</label>
+            <br>
+            <input type="email" id="email" placeholder="Enter Your Email">
+            <br>
+
+            <label for="">Password</label>
+            <br>
+            <input type="password" id="password" placeholder="Enter Password">
+            <br>
+
+            <input type="checkbox" id="checkbox">
+            <label id="remember" for="checkbox">Remember me</label>
+            <span id="forgot">Forgot Password?</span>
+            <br>
+
+            <button onclick="login()">Login</button>
+            <br>
+            
+            <span id="sign">Don't have an account? <a href="./Signup.html">Sign Up</a></span>
+        </div>
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyD4aXh6VqOUlzwAxCcNi7AMvXoZe3JF8vk",
+            authDomain: "teamswebapp.firebaseapp.com",
+            databaseURL: "https://teamswebapp-default-rtdb.firebaseio.com",
+            projectId: "teamswebapp",
+            storageBucket: "teamswebapp.appspot.com",
+            messagingSenderId: "291265260112",
+            appId: "1:291265260112:web:4b834e9bb98567c912ff55"
+        };
+        firebase.initializeApp(firebaseConfig);
+        // firebase.analytics();
+    </script>
+    <script src="./Login/app.js"></script>
+</body>
+
+</html>

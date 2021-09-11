@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "Josefin";
+    src: url("./Fonts/JosefinSlab-Regular.ttf");
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("./Fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "PTSans";
+    src: url("./Fonts/PTSans-Regular.ttf");
+}
+
+p {
+    display: inline
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #eaedf7;
+}
+
+.main_container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    /* for IE 9 */
+    -webkit-transform: translate(-50%, -50%);
+    /* for Safari */
+    /* optional size in px or %: */
+    width: 92%;
+    height: 80%;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 6px;
+}
+
+#name {
+    font-family: "Josefin";
+    color: #3563E4;
+    margin-left: 20px;
+}
+
+#yourTeams div {
+    margin: 0 auto;
+    background-color: white;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+
+#yourTeams div p{
+    font-family: "Josefin";
+    font-weight: 800;
+    font-size: 25px;
+    color: #3563E4;
+}

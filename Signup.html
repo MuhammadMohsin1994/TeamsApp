@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./Signup/style.css">
+
+</head>
+
+<body>
+    <div>
+        <input type="text" id="name" placeholder="Full Name">
+        <br>
+        <input type="email" id="email" placeholder="Email">
+        <br>
+        <input type="password" id="password" placeholder="Password">
+        <br>
+        <p id="warning"></p>
+        <br>
+        <button onclick="saveDetail()">Signup</button>
+    </div>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script> -->
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyD4aXh6VqOUlzwAxCcNi7AMvXoZe3JF8vk",
+            authDomain: "teamswebapp.firebaseapp.com",
+            databaseURL: "https://teamswebapp-default-rtdb.firebaseio.com",
+            projectId: "teamswebapp",
+            storageBucket: "teamswebapp.appspot.com",
+            messagingSenderId: "291265260112",
+            appId: "1:291265260112:web:4b834e9bb98567c912ff55"
+        };
+        firebase.initializeApp(firebaseConfig);
+        // firebase.analytics();
+    </script>
+    <script src="./Signup/app.js"></script>
+</body>
+
+</html>
